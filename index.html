@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <title>Presto! | Foodtruck</title>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    <!-- Arvo Font Import -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">   
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font awesome script -->
+    <script src="https://kit.fontawesome.com/54ff0c56ce.js" crossorigin="anonymous"></script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+<div class="loader">
+  <div class="loader-inner">
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+    <div class="loader-line-wrap">
+      <div class="loader-line"></div>
+    </div>
+  </div>
+</div>
+    
+<header>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <div class="container-fluid">
+      <div>
+        <img src="img/logo.png" alt="Logo" id="logo">
+        <!-- <a class="navbar-brand arvo" href="#">Presto!</a> -->
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="d-flex flex-row-reverse">
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#menukaart">Our menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:presto-foodtruck@gmail.com">Contact us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel" style="height: 100vh">
+    <div class="carousel-indicators" style="margin-bottom: 10vh">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item carousel-pic1 active">
+        <div class="container">
+          <div class="carousel-caption text-start" style="margin-bottom: 20vh">
+            <h1>Unique Italian Foodtruck</h1>
+            <p>Presto! is een unieke Italiaanse foodtruck sinds 2021. We bieden kwaliteitvol eten aan.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item carousel-pic2">
+        <div class="container">
+          <div class="carousel-caption" style="margin-bottom: 20vh">
+            <h1>Onze pizza's</h1>
+            <p>Onze pizza's worden gebakken in een authentieke Italiaanse pizza oven.</p>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item carousel-pic3">
+        <div class="container">
+          <div class="carousel-caption text-end" style="margin-bottom: 20vh">
+            <h1>Milieuvriendelijk</h1>
+            <p>De producten die we gebruiken is 100% biologisch uit Italië. Ook onze verpakkingen zijn bio afbreekbaar. #SaveTheClimate</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+  ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <div class="row">
+      <div class="col-lg-4">
+        <i class="fas fa-utensils icons"></i>
+        <h2 class="h2_text">Bio verpakking</h2>
+        <p>Het eten wordt in biologische verpakkingen verkocht. We vinden het belangrijk om ook ons steentje bij te dragen aan het milieu.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <i class="fas fa-pizza-slice icons"></i>
+        <h2 class="h2_text">Fresh made pizza</h2>
+        <p>Inderdaad! Zelfs onze pizza wordt versbereid door onze chefs! Dit gebeurd dan in de pizzaoven die in onze foodtruck staat.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4">
+        <i class="fas fa-seedling icons"></i>
+        <h2 class="h2_text">Biologisch</h2>
+        <p>Al ons eten is 100% gemaakt van biologische producten regelrecht uit fair trade boerderijen in Italië.</p>
+        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading text">Een ervaring opzich.</h2>
+        <p class="lead">Eén van de grootste doelen die onze foodtruck je wilt aanleveren is om je een ervaring te geven die je niet snel gaat vergeten.</p>
+      </div>
+      <div class="col-md-5">
+        <img src="img/festival.jpg" id="festival" alt="festival">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading text">Waar we bekend om staan.</h2>
+        <p class="lead">Onze pizza's worden 100% vers bereid met biologische producten <span style="font-style: italic;font-weight: bolder">straight from Italy</span>! Waar we ook over beschikken is een authentieke Italiaanse pizzaoven. Indien je een pizza besteld wordt deze erin geschoven en verwarmd op 250°c voor 12 minuutjes lang tot ie een goudkleurige korst heeft.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img src="img/pizzaoven.jpg" id="pizzaoven" alt="pizzaoven">
+      </div>
+    </div>
+
+    <hr class="featurette-divider" id="menukaart">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading text">Het menu dat we aanbieden.</h2>
+        <p class="lead">Dit is het menu dat we aanbieden. We bien je 4 traditionele (heerlijke) Italiaanse gerechten aan gecombineerd met 4 toppers van cocktails! De cocktails bevatten alcohol maar kunnen ook zonder. <br><span style="font-style: italic; font-size: 1rem">*(Indien je alergisch bent aan iets staat hier ook een alergiekaart op)*</span></p>
+      </div>
+      <div class="col-md-5">
+        <a href="img/menu.jpg" target="_blank" download><img src="img/menu.jpg" alt="Menukaart" id="myImg"></a>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01" alt="img">
+          <div id="caption"></div>
+        </div>
+        <p class="text-center" style="margin-top: 2%">Klik op mij!</p>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+
+
+  <!-- FOOTER -->
+    <!-- Site footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>Over ons</h6>
+            <p class="text-justify"><i>Presto!</i> is een Italiaanse foodtruck die zich richt op het brengen van Italiaanse drankjes en hapjes naar zijn klanten.</p>
+          </div>
+
+          <!-- <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+              <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+              <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+              <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+              <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+              <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+            </ul>
+          </div> -->
+
+          <div class="col-sm-12 col-md-6">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="http://scanfcode.com/about/">About Us</a></li>
+              <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+              <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+              <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+              <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by 
+         <a href="#">Presto!</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+</main>
+</body>
+<!-- <script type="text/javascript">
+  var btn = $('#button');
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 300) {
+      btn.addClass('show');
+    } else {
+      btn.removeClass('show');
+    }
+  });
+
+  btn.on('click', function(e) {
+    e.preventDefault();
+    $('html, body').animate({scrollTop:0}, '300');
+  });
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script> -->
+<script>
+    $(window).on("load",function(){
+      $(".loader").fadeOut("slow");
+    });
+</script>
+</html>
