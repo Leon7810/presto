@@ -522,3 +522,7 @@ body::-webkit-scrollbar-thumb {
 		width: 200px;
 	}
 }
+
+.fixed-top {
+  position: absolute !important;
+}
